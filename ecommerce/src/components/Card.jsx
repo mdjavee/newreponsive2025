@@ -14,11 +14,11 @@ const Card = () => {
     <>
     <div>
         <h4 className="text-2xl text-center font-bold">Products</h4>
-        <div className="grid grid-cols-2 gap-5 p-5 mx-auto bg-amber-50 mt-6 rounded-md shadow">
+        <div className="grid grid-cols-2 gap-2 p-3 mx-auto  mt-6 rounded-md shadow">
             {product.map((item)=>(
-                <div key={item.id} className='p-5 mt-9 shadow-md shadow-cyan-900  rounded-md border-4 '>
+                <div key={item.id} className='p-3 mt-9   rounded-md shadow-2xl  border-red-400 border-2 '>
                     <img src={item.image} alt={item.title} className='w-[90%] mb-5  '/>
-                    <h5 className='mb-5 font-bold overflow-auto line-clamp-2'>{item.title}</h5>
+                    <h5 className='mb-5 font-bold overflow-hidden line-clamp-2'>{item.title}</h5>
                     <p className='line-clamp-2 mb-5  font-light font-sans '>{item.description.substring(0,30)}...</p>
                     <p className='font-bold'>$ {item.price}</p>
                 </div>
