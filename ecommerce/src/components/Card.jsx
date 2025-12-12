@@ -13,7 +13,7 @@ const Card = () => {
   return (
     <>
     <div>
-        <h4 className="text-2xl text-center font-bold">Products</h4>
+        <h4 className="text-2xl text-center font-bold font-mono">Products</h4>
         <div className="grid grid-cols-2 gap-2 p-3 mx-auto  mt-6 rounded-md shadow">
             {product.map((item)=>(
                 <div key={item.id} className='p-3 mt-9   rounded-md shadow-2xl  border-red-400 border-2 '>
